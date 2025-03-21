@@ -4,7 +4,6 @@ import type { Linter } from "eslint";
 
 import { FlatCompat } from "@eslint/eslintrc";
 import eslintJS from "@eslint/js";
-import eslintPluginJSDoc from "eslint-plugin-jsdoc";
 // @ts-expect-error, untyped import
 import eslintPluginMarkdown from "eslint-plugin-markdown";
 import eslintPluginNode from "eslint-plugin-n";
@@ -153,7 +152,6 @@ export default [
     processor: "markdown/markdown",
   },
   {
-    ...eslintPluginJSDoc.configs["flat/recommended-typescript"],
     ignores: ["**/*.tsx"],
     rules: {
       "jsdoc/no-defaults": "off",
