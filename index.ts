@@ -153,11 +153,6 @@ export default [
   },
   {
     ignores: ["**/*.tsx"],
-    rules: {
-      "jsdoc/no-defaults": "off",
-      "jsdoc/no-types": "off",
-      "jsdoc/require-jsdoc": ["error", { publicOnly: true }],
-    },
   },
   {
     files: ["**/*.tsx"],
