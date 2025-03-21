@@ -1,75 +1,63 @@
 {
-  "name": "@trumpet/eslint-config-next",
-  "version": "1.8.1",
-  "description": "Comprehensive ESLint config for NextJS projects",
-  "main": "dist/index.js",
-  "type": "module",
-  "files": [
-    "dist/index.js",
-    "dist/index.d.ts"
-  ],
-  "types": "dist/index.d.ts",
-  "readme": "README.md",
-  "keywords": [
-    "eslint",
-    "typescript",
-    "linter",
-    "code-quality",
-    "react"
-  ],
-  "author": "Na'aman Hirschfeld",
-  "license": "MIT",
-  "scripts": {
-    "build": "rimraf dist && tsc",
-    "format": "biome format --write .",
-    "lint": "eslint --fix 'index.ts'",
-    "prepare": "husky",
-    "prepublish": "pnpm run build"
-  },
-  "lint-staged": {
-    "*.json": "biome format --write",
-    "*.ts": [
-      "biome format --write",
-      "eslint --fix --no-warn-ignored"
-    ]
-  },
-  "dependencies": {
-    "@eslint/compat": "^1.2.7",
-    "@eslint/eslintrc": "^3.3.0",
-    "@eslint/js": "^9.22.0",
-    "@next/eslint-plugin-next": "^15.2.3",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-markdown": "^5.1.0",
-    "eslint-plugin-n": "17.16.2",
-    "eslint-plugin-perfectionist": "^4.10.1",
-    "eslint-plugin-promise": "7.2.1",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-perf": "^3.3.3",
-    "eslint-plugin-unicorn": "57.0.0",
-    "eslint-plugin-unused-imports": "^4.1.4",
-    "eslint-plugin-vitest": "^0.5.4",
-    "globals": "^16.0.0"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@commitlint/config-conventional": "^19.8.0",
-    "eslint": "^9.22.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
-    "rimraf": "^6.0.1",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.27.0"
-  },
-  "peerDependencies": {
-    "eslint": ">=9",
-    "next": ">=14",
-    "react": ">=18",
-    "typescript": ">=5",
-    "typescript-eslint": ">=8"
-  },
-  "engines": {
-    "node": ">=20.0.0"
-  },
-  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
+	"name": "@trumpet/eslint-config-next",
+	"version": "1.8.1",
+	"description": "Comprehensive ESLint config for NextJS projects",
+	"main": "dist/index.js",
+	"type": "module",
+	"files": ["dist/index.js", "dist/index.d.ts"],
+	"types": "dist/index.d.ts",
+	"readme": "README.md",
+	"keywords": ["eslint", "typescript", "linter", "code-quality", "react"],
+	"author": "Na'aman Hirschfeld",
+	"license": "MIT",
+	"scripts": {
+		"build": "rimraf dist && tsc",
+		"format": "biome format --write .",
+		"lint": "eslint --fix 'index.ts'",
+		"prepare": "husky",
+		"prepublish": "pnpm run build"
+	},
+	"lint-staged": {
+		"*.json": "biome format --write",
+		"*.ts": ["biome format --write", "eslint --fix --no-warn-ignored"]
+	},
+	"dependencies": {
+		"@eslint/compat": "^1.2.7",
+		"@eslint/eslintrc": "^3.3.0",
+		"@eslint/js": "^9.22.0",
+		"@next/eslint-plugin-next": "^15.2.3",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
+		"eslint-plugin-markdown": "^5.1.0",
+		"eslint-plugin-n": "17.16.2",
+		"eslint-plugin-perfectionist": "^4.10.1",
+		"eslint-plugin-promise": "7.2.1",
+		"eslint-plugin-react": "^7.37.4",
+		"eslint-plugin-react-hooks": "^5.2.0",
+		"eslint-plugin-react-perf": "^3.3.3",
+		"eslint-plugin-unicorn": "57.0.0",
+		"eslint-plugin-unused-imports": "^4.1.4",
+		"eslint-plugin-vitest": "^0.5.4",
+		"globals": "^16.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@commitlint/config-conventional": "^19.8.0",
+		"eslint": "^9.22.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.5.0",
+		"rimraf": "^6.0.1",
+		"typescript": "^5.8.2",
+		"typescript-eslint": "^8.27.0"
+	},
+	"peerDependencies": {
+		"eslint": ">=9",
+		"next": ">=14",
+		"react": ">=18",
+		"typescript": ">=5",
+		"typescript-eslint": ">=8"
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
 }
