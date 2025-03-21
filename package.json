@@ -1,13 +1,22 @@
 {
 	"name": "@trumpet/eslint-config-next",
-	"version": "1.8.1",
+	"version": "1.9.0",
 	"description": "Comprehensive ESLint config for NextJS projects",
 	"main": "dist/index.js",
 	"type": "module",
-	"files": ["dist/index.js", "dist/index.d.ts"],
+	"files": [
+		"dist/index.js",
+		"dist/index.d.ts"
+	],
 	"types": "dist/index.d.ts",
 	"readme": "README.md",
-	"keywords": ["eslint", "typescript", "linter", "code-quality", "react"],
+	"keywords": [
+		"eslint",
+		"typescript",
+		"linter",
+		"code-quality",
+		"react"
+	],
 	"author": "Na'aman Hirschfeld",
 	"license": "MIT",
 	"scripts": {
@@ -19,7 +28,10 @@
 	},
 	"lint-staged": {
 		"*.json": "biome format --write",
-		"*.ts": ["biome format --write", "eslint --fix --no-warn-ignored"]
+		"*.ts": [
+			"biome format --write",
+			"eslint --fix --no-warn-ignored"
+		]
 	},
 	"dependencies": {
 		"@eslint/compat": "^1.2.7",
